@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="pt-br">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!---Carregando o favicon-->
+    <link rel="icon" type="image/jpg" href="images/calculadora.jpg" />
+   
+    <title>Calculadora</title>
+     <!--Carregando font do google-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+     <!--Carregando o nosso CSS-->
+     <link rel="stylesheet" href="css/estilo.css" />
+    </head>
+<body>
+    <div id="calculadora">
+        <h3>♥ Calculadora da Mairis ♥</h3>
+        <input type="text" id="resultado" disabled />
+        <div id="containerBotao">
+            <button id="um" onclick="calcula('1')">1</button>
+            <button id="dois" onclick="calcula('2')">2</button>
+            <button id="tres" onclick="calcula('3')">3</button>
+            <button in="multiplicar"onclick="calcula('*')">*</button>
+            <button id="limpar" onclick="limpar()">C</button>
+            <button id="quatro" onclick="calcula('4')">4</button>
+            <button id="cinco" onclick="calcula('5')">5</button>
+            <button id="seis"onclick="calcula('6')">6</button>
+            <button id="dividir"onclick="calcula('/')">/</button>
+            <button id="apagar" onclick="apagar()">&larr;</button> <!--Icone left arrow-->
+            <button id="sete" onclick="calcula('7')">7</button>
+            <button id="oito"onclick="calcula('8')">8</button>
+            <button id="nove" onclick="calcula('9')">9</button>
+            <button id="somar" onclick="calcula('+')">+</button>
+            <button id="igual"onclick="resultadoFinal()">♥</button>
+            <button id="zero"onclick="calcula('0')">0</button>
+            <button id="ponto"onclick="calcula('.')">.</button>
+            <button id="doiszeros"onclick="calcula('00')">00</button>
+            <button id="subtrair" onclick="calcula('-')">-</button>
+
+        </div>
+
+    </div>
+    
+
+    
+</body>
+<script src="js/script.js"></script>
+</html>
